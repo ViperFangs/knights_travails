@@ -13,42 +13,14 @@ class Knight
   private
 
   def possible_moves(position_array)
-    board_end_point = 8
-    board_start_point = 0
     return_moves = []
-    current_row = position_array[0]
-    current_column = position_array[1]
+    moves = [[1, 2], [1, -2], [-1, 2], [-1, -2], [2, 1], [2, -1], [-2, 1], [-2, -1]]
 
-    if current_row + 2 < board_end_point && current_column + 1 < board_end_point
-      return_moves.push([current_row + 2, current_column + 1])
-    end
+    moves.each do |move|
+      row = position_array[0] + move[0]
+      column = position_array[1] + move[1]
 
-    if current_row + 2 < board_end_point && current_column - 1 >= board_start_point
-      return_moves.push([current_row + 2, current_column - 1])
-    end
-
-    if current_row - 2 >= board_start_point && current_column + 1 < board_end_point
-      return_moves.push([current_row - 2, current_column + 1])
-    end
-
-    if current_row - 2 >= board_start_point && current_column - 1 >= board_start_point
-      return_moves.push([current_row - 2, current_column - 1])
-    end
-
-    if current_row + 1 < board_end_point && current_column + 2 < board_end_point
-      return_moves.push([current_row + 1, current_column + 2])
-    end
-
-    if current_row - 1 >= board_start_point && current_column + 2 < board_end_point
-      return_moves.push([current_row - 1, current_column + 2])
-    end
-
-    if current_row + 1 < board_end_point && current_column - 2 >= board_start_point
-      return_moves.push([current_row + 1, current_column - 2])
-    end
-
-    if current_row - 1 >= board_start_point && current_column - 2 >= board_start_point
-      return_moves.push([current_row - 1, current_column - 2])
+      return_moves << [row, column] if row.between?(0, 7) && column.between?(0, 7)
     end
 
     return_moves
