@@ -8,9 +8,9 @@ The task is to build a function knight_moves that shows the shortest possible wa
 
 ## Expected Output
 
-\> knight_moves([3,3],[4,3])
-\n=> You made it in 3 moves!  Here's your path:
-  \n[3,3]
-  \n[4,5]
-  \n[2,4]
-  \n[4,3]
+\> knight_moves([3,3],[4,3])  
+=> You made it in 3 moves!  Here's your path:  
+  [3,3]  
+  [4,5]  
+  [2,4]  
+  [4,3]  
