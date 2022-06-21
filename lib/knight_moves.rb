@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'knight'
 require 'set'
 
@@ -51,4 +53,3 @@ def display_path(path_array)
 end
 
 knight_moves([3, 3], [0, 0])
-

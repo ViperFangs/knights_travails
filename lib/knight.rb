@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Knight
   attr_accessor :position, :next_moves, :previous_move
 
@@ -51,5 +53,3 @@ class Knight
     return_moves
   end
 end
-
-# p Knight.new([3,3]).next_moves
