@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# class Knight stores its current_position, the next possible moves and the previous_move that it came from
 class Knight
   attr_accessor :position, :next_moves, :previous_move
 

@@ -51,4 +51,4 @@ def display_path(path_array)
   end
 end
 
-knight_moves([6, 7], [0, 0])
+knight_moves([3, 3], [4, 3])
