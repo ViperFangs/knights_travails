@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative 'knight'
-require 'set'
 
 def knight_moves(start_move_array, end_move_array)
   # knight_moves_helper will return the final move knight instance
@@ -52,4 +51,4 @@ def display_path(path_array)
   end
 end
 
-knight_moves([3, 3], [0, 0])
+knight_moves([6, 7], [0, 0])
