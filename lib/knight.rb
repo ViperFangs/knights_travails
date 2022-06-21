@@ -20,7 +20,7 @@ class Knight
       row = position_array[0] + move[0]
       column = position_array[1] + move[1]
 
-      return_moves << [row, column] if row.between?(0, 7) && column.between?(0, 7)
+      return_moves.push([row, column]) if row.between?(0, 7) && column.between?(0, 7)
     end
 
     return_moves
