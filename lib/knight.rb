@@ -1,14 +1,17 @@
 class Knight
-  attr_accessor :position, :next_moves
+  attr_accessor :position, :next_moves, :previous_move
 
   def initialize(position_array)
     self.position = position_array
     self.next_moves = possible_moves(position_array)
+    self.previous_move = nil
   end
 
+  private
+
   def possible_moves(position_array)
-    board_end_point = 8 
-    board_start_point = 0 
+    board_end_point = 8
+    board_start_point = 0
     return_moves = []
     current_row = position_array[0]
     current_column = position_array[1]
@@ -49,4 +52,4 @@ class Knight
   end
 end
 
-p Knight.new([3,3]).next_moves
+# p Knight.new([3,3]).next_moves
