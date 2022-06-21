@@ -14,9 +14,9 @@ class Knight
 
   def possible_moves(position_array)
     return_moves = []
-    possible_moves = [[1, 2], [1, -2], [-1, 2], [-1, -2], [2, 1], [2, -1], [-2, 1], [-2, -1]]
+    future_moves = [[1, 2], [1, -2], [-1, 2], [-1, -2], [2, 1], [2, -1], [-2, 1], [-2, -1]]
 
-    possible_moves.each do |move|
+    future_moves.each do |move|
       row = position_array[0] + move[0]
       column = position_array[1] + move[1]
 
